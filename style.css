@@ -1,32 +1,35 @@
+/* RESET BÁSICO */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+/* CUERPO */
+body {
+  min-height: 100vh;
+  background: #f2f2f2;
   font-family: Arial, sans-serif;
 }
 
-body {
-  margin: 0;
-  background: #f2f2f2;
-}
-
-/* CONTENEDOR PANTALLA COMPLETA */
+/* PANTALLA COMPLETA */
 .pantalla {
   min-height: 100vh;
-  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center;      /* centra vertical */
+  justify-content: center;  /* centra horizontal */
   padding: 20px;
 }
 
 /* TARJETA GRANDE */
 .card {
-  background: white;
   width: 100%;
-  max-width: 600px;
-  min-height: 85vh;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  max-width: 420px;
+  min-height: 90vh;   /* ocupa casi toda la pantalla */
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -36,43 +39,42 @@ body {
 h1 {
   font-size: 28px;
   text-align: center;
-  color: #1f4fd8;
-  margin-bottom: 10px;
 }
 
 .descripcion {
-  font-size: 18px;
   text-align: center;
-  margin-bottom: 20px;
+  font-size: 16px;
+  margin: 10px 0 20px;
 }
 
 h2 {
-  font-size: 22px;
-  margin-bottom: 15px;
+  margin: 15px 0;
 }
 
 /* PRODUCTOS */
 .productos {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .producto {
   display: flex;
   justify-content: space-between;
-  font-size: 18px;
-  padding: 12px 0;
+  font-size: 17px;
   border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
 }
 
-/* BOTÓN */
+/* BOTÓN WHATSAPP */
 .btn-whatsapp {
-  margin-top: 30px;
-  background: #25d366;
+  display: block;
+  text-align: center;
+  background: #25D366;
   color: white;
   text-decoration: none;
-  text-align: center;
-  padding: 16px;
-  border-radius: 10px;
-  font-size: 20px;
-  font-weight: bold;
+  padding: 15px;
+  border-radius: 30px;
+  font-size: 18px;
+  margin-top: 20px;
 }
