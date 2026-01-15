@@ -78,3 +78,30 @@ h2 {
   font-size: 18px;
   margin-top: 20px;
 }
+.productos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.producto {
+  text-align: center;
+}
+
+.producto img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.nombre {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+}
+
+.precio {
+  font-size: 16px;
+  color: #444;
+}
