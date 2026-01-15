@@ -1,73 +1,78 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 body {
-  min-height: 100vh;
+  margin: 0;
   background: #f2f2f2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-/* CAJA GIGANTE */
-.card {
-  width: 95vw;
-  height: 85vh;
-  background: white;
-  border-radius: 20px;
-  padding: 30px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+/* CONTENEDOR PANTALLA COMPLETA */
+.pantalla {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
 
+/* TARJETA GRANDE */
+.card {
+  background: white;
+  width: 100%;
+  max-width: 600px;
+  min-height: 85vh;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-/* TITULOS GRANDES */
-.card h1 {
-  font-size: 30px;
-  color: #1e40af;
+/* TEXTOS */
+h1 {
+  font-size: 28px;
   text-align: center;
-}
-
-.card p {
-  font-size: 18px;
-  text-align: center;
-  color: #444;
-}
-
-/* PRODUCTOS */
-.card h2 {
-  font-size: 24px;
-  margin-top: 20px;
+  color: #1f4fd8;
   margin-bottom: 10px;
 }
 
-.productos {
+.descripcion {
   font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* PRODUCTOS */
+.productos {
+  width: 100%;
 }
 
 .producto {
   display: flex;
   justify-content: space-between;
+  font-size: 18px;
   padding: 12px 0;
   border-bottom: 1px solid #ddd;
 }
 
-/* BOTÓN GIGANTE */
+/* BOTÓN */
 .btn-whatsapp {
-  margin-top: 25px;
-  width: 100%;
-  background: #22c55e;
+  margin-top: 30px;
+  background: #25d366;
   color: white;
+  text-decoration: none;
   text-align: center;
-  padding: 18px;
+  padding: 16px;
+  border-radius: 10px;
   font-size: 20px;
   font-weight: bold;
-  border-radius: 15px;
-  text-decoration: none;
 }
