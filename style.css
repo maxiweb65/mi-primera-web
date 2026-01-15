@@ -1,45 +1,83 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fondo de la página */
 body {
-  background: #eeeeee;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+    background: #f2f2f2;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.card {
-  background: white;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  text-align: center;
-  width: 90%;
-  max-width: 350px;
+/* Tarjeta principal */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    width: 90%;
+    max-width: 380px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
+/* Título */
 h1 {
-  color: #0033cc;
-  font-size: 26px;
-  margin-bottom: 10px;
+    font-size: 24px;
+    color: #1e40af;
+    margin-bottom: 10px;
 }
 
+/* Texto descriptivo */
 .info {
-  font-size: 16px;
-  margin-bottom: 20px;
-  color: #444;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Sección productos */
+.productos {
+    margin-bottom: 25px;
+}
+
+.productos h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+/* Producto individual */
+.producto {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    padding: 8px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Botón WhatsApp */
+a {
+    text-decoration: none;
 }
 
 button {
-  background: #25D366;
-  color: white;
-  padding: 14px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 14px 26px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
+/* Efecto al tocar */
 button:hover {
-  background: #1ebe5d;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
