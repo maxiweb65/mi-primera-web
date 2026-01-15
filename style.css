@@ -1,5 +1,5 @@
 body {
-  background: #f2f2f2;
+  background: #eeeeee;
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
@@ -8,14 +8,14 @@ body {
   margin: 0;
 }
 
-.container {
+.card {
   background: white;
   padding: 25px;
-  width: 90%;
-  max-width: 400px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   text-align: center;
+  width: 90%;
+  max-width: 350px;
 }
 
 h1 {
@@ -25,20 +25,19 @@ h1 {
 }
 
 .info {
-  font-size: 18px;
-  color: #555;
+  font-size: 16px;
   margin-bottom: 20px;
+  color: #444;
 }
 
 button {
-  background: #25d366;
+  background: #25D366;
   color: white;
   padding: 14px 20px;
-  font-size: 18px;
+  font-size: 16px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  width: 100%;
 }
 
 button:hover {
